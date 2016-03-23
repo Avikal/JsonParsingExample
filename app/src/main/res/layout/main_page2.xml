@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ffffffff" >
+<!-- 
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:adjustViewBounds="true"` 
+            android:padding="5.0dip"
+            android:src="@drawable/icon1" /> -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+
+            android:text="Clean INDIA"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ff1385bc"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_show"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/view_icon"
+            android:gravity="right"
+            android:scaleType="centerCrop"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="2.0dip"
+        android:background="#ff099244" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/categorytitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="Category"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ff099244"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="Images and Description of Problem"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#ff1385bc"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="0.0dip" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="10.0dip" >
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/myContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" 
+                            android:layout_gravity="center_horizontal">
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/btn_camera"
+                        android:layout_width="70.0dip"
+                        android:layout_height="70.0dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:alpha="0.9"
+                        android:background="@drawable/camera_icon" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittextstyle1"
+                android:editable="false"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/imei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittextstyle1"
+                android:editable="false"
+                android:ems="10"
+                android:hint="Enter Imie"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editText_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/edittextstyle"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Description of Problem"
+                android:inputType="textMultiLine"
+                android:padding="5.0dip"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="Location"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#ff1385bc"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.9"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <EditText
+                    android:id="@+id/edt_address1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/edittextstyle"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="Full Address"
+                    android:inputType="textPersonName"
+                    android:padding="5.0dip"
+                    android:textColor="#000000" />
+
+                <!--
+                     <Spinner
+                    android:id="@+id/spinnerward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:drawSelectorOnTop="true"
+                    android:textColor="#ff000000" />
+                -->
+			<Spinner
+                    android:id="@+id/spinnerstate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:drawSelectorOnTop="true" />
+			
+			<Spinner
+                    android:id="@+id/spinnercity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:drawSelectorOnTop="true" />
+                <Spinner
+                    android:id="@+id/spinnercolony"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:drawSelectorOnTop="true" />
+                <!-- android:textColor="#ff000000" -->
+
+<!--                 <EditText
+                    android:id="@+id/edt_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5.0dip"
+                     android:background="@drawable/edittextstyle"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="City*"
+                    android:padding="5.0dip"
+                    android:text="Indore"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edt_state"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/edittextstyle"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="State*"
+                    android:padding="5.0dip"
+                    android:text="Madhya Pradesh"
+                    android:textColor="#000000" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.0dip"
+                android:background="#ffffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_margin="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#ff1385bc"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+                    android:text="Submit"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.0dip"
+                android:background="#ffffffff"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

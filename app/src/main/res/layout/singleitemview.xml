@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ffffffff"
+        android:id="@+id/heading" >
+
+       <!--  <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:adjustViewBounds="true"
+            android:padding="5.0dip"
+            android:src="@drawable/icon1" /> -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+
+            android:text="Complain View"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ff1385bc"
+            android:textStyle="bold" />
+        
+       
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="2.0dip"
+        android:background="#ff099244" />
+	<RelativeLayout  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@id/view1"
+    android:layout_margin="10dp" >
+     <ImageView
+        android:id="@+id/flag"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:padding="1dp"
+         
+        />
+     <ScrollView 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/scrool"
+         android:layout_below="@id/flag">
+         
+         <RelativeLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+             >
+    
+     <!-- Description -->
+    <TextView
+        
+        android:id="@+id/description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :  "
+        
+        android:textColor="#ff1385bc"/>
+
+    <TextView
+        android:id="@+id/description"
+          
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/description_label" 
+        android:layout_marginLeft="10dp"
+       
+         android:textColor="#000000"
+         />
+ <!-- Address1 -->
+    <TextView
+        android:id="@+id/add1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_label"
+        android:text="Full Address : "
+        android:layout_marginTop="10dp" 
+        android:textColor="#ff1385bc" 
+           />
+
+    <TextView
+        android:id="@+id/add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_toRightOf="@+id/add1_label" 
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp" 
+         android:textColor="#000000"
+         />
+     <!-- Address2 
+
+    <TextView
+        android:id="@+id/add2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add1_label"
+        android:text="Address-2:" />
+
+    <TextView
+        android:id="@+id/add_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add1"
+        android:layout_toRightOf="@+id/add2_label" 
+         android:layout_marginLeft="10dp"/>-->
+    
+     <!-- Ward 
+      <TextView
+        android:id="@+id/ward_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add2_label"
+        android:text="Ward_No:" />
+
+    <TextView
+        android:id="@+id/ward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_2"
+        android:layout_toRightOf="@+id/ward_label"
+         android:layout_marginLeft="10dp" />-->
+      <!-- Colony -->
+       <TextView
+        android:id="@+id/colony_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add1_label"
+        android:text="Colony Name : "
+        android:layout_marginTop="10dp" 
+        android:textColor="#ff1385bc"
+          />
+
+    <TextView
+        android:id="@+id/colony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add1"
+        android:layout_toRightOf="@+id/colony_label"
+         android:layout_marginLeft="10dp" 
+         android:layout_marginTop="10dp" 
+         android:textColor="#000000"/>
+	 <!-- City -->    
+	  <TextView
+        android:id="@+id/city_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colony_label"
+        android:text="City :        "
+        android:textColor="#ff1385bc" 
+        android:layout_marginTop="10dp" 
+        />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colony"
+        android:layout_toRightOf="@+id/city_label"
+         android:layout_marginLeft="10dp" 
+         android:layout_marginTop="10dp" 
+         android:textColor="#000000"/>
+	  <!-- state -->
+       <TextView
+        android:id="@+id/state_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_label"
+        android:text="State :       " 
+        android:layout_marginTop="10dp" 
+        android:textColor="#ff1385bc"
+          />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_toRightOf="@+id/state_label" 
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp" 
+         android:textColor="#000000"/>
+    </RelativeLayout>
+     </ScrollView>
+</RelativeLayout>
+</RelativeLayout>
